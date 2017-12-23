@@ -1,0 +1,99 @@
+/* Clases Especificas */
+.gallery{
+    height: 100px;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+section:nth-child(odd) {
+    background-color: #f0f0ef;
+}
+
+form {
+    margin: 0px 10px 20px;
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+    height: 350px;
+    padding: 10px;
+    background-color: #CCCCCC;
+}
+/* Helpers */
+
+.center {
+    margin: 0 auto;
+}
+
+.inline {
+    display: inline;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.left {
+    padding-left: 0px;
+}
+
+.right {
+    padding-right: 0px;
+}
+
+
+
+.textuppercase {
+    text-transform: uppercase;
+}
+
+.view-mobile {
+    display: block;
+}
+
+.view-desktop {
+    display: none;
+}
+
+
+
+.btn-block {
+    margin: 10px 0px;
+}
+
+
+
+/* section 1 */
+
+section:first-of-type {
+    background-color: #cc3366;
+    height: 540px;
+}
+
+
+
+/* @media querys */
+
+@media (min-width: 768px) {
+
+    /* ****** */
+    .view-mobile {
+        display: none;
+    }
+    .view-desktop {
+        display: block;
+    }
+    .modal-sm {
+        width: 480px;
+    }
+    .modal-lg {
+        width: 480px;
+    }
+}
+
