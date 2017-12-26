@@ -1,4 +1,5 @@
-/* Clases Especificas */
+
+  /* Clases Especificas */
 .gallery{
     height: 100px;
 }
@@ -6,7 +7,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-section:nth-child(odd) {
+section{
     background-color: #f0f0ef;
 }
 
@@ -23,10 +24,12 @@ form {
 }
 /* Helpers */
 
-.center {
-    margin: 0 auto;
+.center-y {
+    transform: translateY(120%);
 }
-
+.white{
+    color: white;
+}
 .inline {
     display: inline;
 }
@@ -71,9 +74,9 @@ form {
 
 /* section 1 */
 
-section:first-of-type {
+.splash {
     background-color: #cc3366;
-    height: 540px;
+    height: 100vh;
 }
 
 
