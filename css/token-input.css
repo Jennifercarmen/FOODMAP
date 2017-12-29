@@ -22,7 +22,6 @@ ul.token-input-list-bootstrap li input {
   li.token-input-token-bootstrap {
     overflow: hidden;
     height: auto ;
-    height: 15px;
     margin: 3px;
     padding: 1px 5px;
     cursor: default;

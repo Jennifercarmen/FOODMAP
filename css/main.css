@@ -2,8 +2,16 @@
   /* Clases Especificas */
 .imggallery{
     width: 100%;
-    border-radius: 10px;
     margin-top: 10px;
+    border: 1px solid red;
+}
+.title{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 30px;
 }
 body {
     font-family: 'Raleway', sans-serif;
@@ -82,9 +90,7 @@ form {
 }
 
 
-#i-e{
-background-color: red;
-}
+
 /* @media querys */
 
 @media (min-width: 768px) {
