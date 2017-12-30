@@ -1,5 +1,5 @@
 jQuery(document).ready(function () {
-
+	initMap()
 	var typeRestaurant = Object.keys(data)[3];
 
 	$(".logo").animate({ "left": "+=28%" }, "slow");
@@ -86,7 +86,13 @@ jQuery(document).ready(function () {
 			searchingText: "Buscando...",
 			tokenLimit: 1
 		});
+		if ($(".token-input").tokenInput("get").length === 0) {
+			$("ul" ).addClass( "input-ul");
 
+		}
+		$("ul").on('keyup', function(){
+			$( "ul" ).removeClass( "input-ul" );
+		});
 	$("#buscar").click(function () {
 		var inputvalue = $(".token-input").tokenInput("get");
 		if (inputvalue.length === 0) {
