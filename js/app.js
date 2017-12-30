@@ -32,28 +32,31 @@ jQuery(document).ready(function () {
 				'<p class="title" id="' + data[typeRestaurant][i]["id"] + '"></p>' +
 				'<img  class="imggallery img-responsive" ' +
 				'src=' + data[typeRestaurant][i]["image"] + '> </div>');
-		$(".content-modal").append('<div class="modal fade" id="myModal' + data[typeRestaurant][i]["id"] + '" tabindex="-1">'+
-		'<div class="modal-dialog" >'+
-			'<div class="modal-content">'+
-				'<div class="modal-body">'+
-						'<div class="container">' +
-						'<div class="row">'+
-									'<div class="col-xs-12">' +
-								'<h4>'+data[typeRestaurant][i]["name"]+' </h4>'+
-								'<div class="row">'+
-									'<div class="col-xs-10">' +
-								'<div class="embed-responsive embed-responsive-16by9">' +
-								'<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31787.42301976514!2d-80.64935745684781!3d-5.195235063191625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants!5e0!3m2!1ses-419!2spe!4v1514129691073"' +
-								'width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>' +
-						
-								'</div>'+
-							'</div>'+
-						'</div>'+
-				'</div>'+
-			'</div>'+
-		'</div>'+
-		'</div>'+
-		'</div>');
+			$(".content-modal").append('<div class="modal fade" id="myModal' + data[typeRestaurant][i]["id"] + '" tabindex="-1">' +
+				'<div class="modal-dialog" >' +
+				'<div class="modal-content">' +
+				'<div class="modal-header">' +
+				'<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+				'<h4 class="modal-title" id="myModalLabel">' + data[typeRestaurant][i]["name"] + ' </h4>' +
+				'</div>' +
+				'<div class="modal-body">' +
+				'<div class="container">' +
+				'<div class="row">' +
+				'<div class="col-xs-12">' +
+				'<div class="row">' +
+				'<div class="col-xs-10">' +
+				'<div class="embed-responsive embed-responsive-16by9">' +
+				'<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31787.42301976514!2d-80.64935745684781!3d-5.195235063191625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants!5e0!3m2!1ses-419!2spe!4v1514129691073"' +
+				'width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>' +
+
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				'</div>');
 
 		}
 		$(".image_gallery").mouseover(function () {
@@ -84,13 +87,17 @@ jQuery(document).ready(function () {
 			tokenLimit: 1
 		});
 
-	$("button").click(function () {
-		$('.gallery').empty();
+	$("#buscar").click(function () {
 		var inputvalue = $(".token-input").tokenInput("get");
-		var typeRestaurant = inputvalue[0]["name"];
-		console.log(data[typeRestaurant]);
-		Gallery(typeRestaurant);
-
+		if (inputvalue.length === 0) {
+			alert("ingrese un valor");
+		}
+		else {
+			$('.gallery').empty();
+			var typeRestaurant = inputvalue[0]["name"];
+			console.log(data[typeRestaurant]);
+			Gallery(typeRestaurant);
+		}
 	});
 
 })
