@@ -28,11 +28,11 @@ jQuery(document).ready(function () {
 	function Gallery(typeRestaurant) {
 		for (i = 0; i < data[typeRestaurant].length; i++) {
 			$(".gallery").append('<div class="col-xs-6 image_gallery"' +
-				'data-toggle="modal" data-target="#myModal">' +
+				'data-toggle="modal" data-target="#myModal' + data[typeRestaurant][i]["id"] + '">' +
 				'<p class="title" id="' + data[typeRestaurant][i]["id"] + '"></p>' +
 				'<img  class="imggallery img-responsive" ' +
 				'src=' + data[typeRestaurant][i]["image"] + '> </div>');
-		$(".content-modal").append('<div class="modal fade" id="myModal" tabindex="-1">'+
+		$(".content-modal").append('<div class="modal fade" id="myModal' + data[typeRestaurant][i]["id"] + '" tabindex="-1">'+
 		'<div class="modal-dialog" >'+
 			'<div class="modal-content">'+
 				'<div class="modal-body">'+
