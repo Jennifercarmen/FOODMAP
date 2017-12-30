@@ -35,11 +35,14 @@ jQuery(document).ready(function () {
 		$(".content-modal").append('<div class="modal fade" id="myModal' + data[typeRestaurant][i]["id"] + '" tabindex="-1">'+
 		'<div class="modal-dialog" >'+
 			'<div class="modal-content">'+
+			'<div class="modal-header">'+
+			'<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+			'<h4 class="modal-title" id="myModalLabel">'+data[typeRestaurant][i]["name"]+' </h4>'+
+			'</div>'+
 				'<div class="modal-body">'+
 						'<div class="container">' +
 						'<div class="row">'+
 									'<div class="col-xs-12">' +
-								'<h4>'+data[typeRestaurant][i]["name"]+' </h4>'+
 								'<div class="row">'+
 									'<div class="col-xs-10">' +
 								'<div class="embed-responsive embed-responsive-16by9">' +
@@ -84,13 +87,17 @@ jQuery(document).ready(function () {
 			tokenLimit: 1
 		});
 
-	$("button").click(function () {
-		$('.gallery').empty();
+	$("#buscar").click(function () {
 		var inputvalue = $(".token-input").tokenInput("get");
-		var typeRestaurant = inputvalue[0]["name"];
-		console.log(data[typeRestaurant]);
-		Gallery(typeRestaurant);
-
+if(inputvalue.length===0){
+		alert("ingrese un valor");
+}
+else{
+	$('.gallery').empty();
+	var typeRestaurant = inputvalue[0]["name"];
+	console.log(data[typeRestaurant]);
+	Gallery(typeRestaurant);
+}
 	});
 
 })
