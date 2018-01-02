@@ -1,25 +1,5 @@
 /* Clases Especificas */
 
-<<<<<<< HEAD
-  /* Clases Especificas */
-.imggallery{
-    width: 100%;
-    margin-top: 10px;
-}
-#mapa {
-    width: 100%;
-    height: 300px;
-    }
-.title{
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    position: absolute;
-    top: 50px;
-    left: 30px;
-}
-=======
->>>>>>> d68da006ba1f1c8b749f44f719c7a6dc67eeea41
 body {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
@@ -73,21 +53,13 @@ section {
     background-color: #cc3366;
     height: 100vh;
 }
-<<<<<<< HEAD
-.input-ul:after{
-=======
 
 .input-ul:after {
->>>>>>> d68da006ba1f1c8b749f44f719c7a6dc67eeea41
     content: "Filtrar Busqueda";
     left: 10px;
     top: 8px;
     position: absolute;
-<<<<<<< HEAD
-    color: #9d9d9d;  
-=======
     color: #9d9d9d;
->>>>>>> d68da006ba1f1c8b749f44f719c7a6dc67eeea41
 }
 
 .imggallery {
