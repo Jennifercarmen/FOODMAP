@@ -1,6 +1,5 @@
 var data = {
-  'Picanterias': [
-    {
+  'Picanterias': [{
       'id': 'P1',
       'name': 'Entre Patas',
       'Adress': 'Av. Gullman 121',
@@ -74,8 +73,7 @@ var data = {
 
     },
   ],
-  'Pollerias': [
-    {
+  'Pollerias': [{
       'id': 'Pol1',
       'name': 'Cali',
       'Adress': 'Av. Lama 121',
@@ -148,11 +146,10 @@ var data = {
       'image': 'assets/images/Pollerias/PolloDorado.jpg'
 
     },
-    
+
   ],
 
-  'Buffet': [
-    {
+  'Buffet': [{
       'id': 'Buf1',
       'name': 'Mil Sabores',
       'Adress': 'Santa Margarita calle 9, Mz EJ Lt 20',
@@ -216,8 +213,7 @@ var data = {
 
     },
   ],
-  'Chifa': [
-    {
+  'Chifa': [{
       'id': 'chif1',
       'name': 'Hao Swao',
       'Adress': 'Av. Benavides 245',
@@ -281,8 +277,7 @@ var data = {
 
     },
   ],
-  'comida rápida': [
-    {
+  'comida rápida': [{
       'id': 'cr1',
       'name': 'Carbón Burger',
       'Adress': 'Jirón Arequipa 788',
@@ -346,10 +341,6 @@ var data = {
 
     },
   ],
-  
+
 
 };
-
-
-
-
