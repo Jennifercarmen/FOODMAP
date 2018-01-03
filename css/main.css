@@ -9,7 +9,19 @@ body {
 
 
 /* Helpers */
-
+.navbar-header{
+    background-color: #5755b9;
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: white;
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
 .image_gallery {
     height: 200px;
     margin-bottom: 10px;
@@ -17,6 +29,9 @@ body {
 
 .search {
     margin-top: 10px;
+}
+.white{
+    color: white;
 }
 
 .vertical-center {
@@ -54,7 +69,7 @@ section {
     height: 100vh;
 }
 
-.input-ul:after {
+.search .input-ul:after {
     content: "Filtrar Busqueda";
     left: 10px;
     top: 8px;
