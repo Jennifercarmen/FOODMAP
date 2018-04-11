@@ -32,8 +32,8 @@ jQuery(document).ready(function() {
 
         '<div class="container">' +
         '<div class="row">' +
-        '<div class="col-xs-12 imgmodal">' +
-        ' <img class="img-responsive" src="../assets/images/plate.png" alt="Hamburguesa">' +
+        '<div class="col-xs-12 col-md-12">' +
+        ' <img class="img-responsive center imgmodal" src="../assets/images/plate.png" alt="Hamburguesa">' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -51,33 +51,29 @@ jQuery(document).ready(function() {
 
         '<div class="container">' +
         '<div class="row">' +
-        '<div class="col-xs-12 bold">' +
+        '<div class="col-xs-12 col-md-12 bold">' +
         'Telefono' +
         '</div>' +
-        '<div class="col-xs-12 ">' +
+        '<div class="col-xs-12 col-md-12">' +
         data[typeRestaurant][i]['Telefono'] +
         '</div>' +
         '</div>' +
 
-        '<div class="container">' +
         '<div class="row">' +
-        '<div class="col-xs-12">' +
+        '<div class="col-xs-12 col-md-12">' +
         data[typeRestaurant][i]['Descripcion'] +
         '</div>' +
         '</div>' +
-        '</div>' +
 
-        '<div class="container">' +
         '<div class="row">' +
-        '<div class="col-xs-12">' +
+        '<div class="col-xs-12 col-md-12">' +
         data[typeRestaurant][i]['Apertura'] +
         '</div>' +
-        '</div>' +
-        '</div>' +
+        '</div><br>' +
 
         '<div class="container">' +
         '<div class="row">' +
-        '<div class="col-xs-12">' +
+        '<div class="col-xs-12 col-md-12">' +
         '<button type="button" class="btn btn-primary" id="send">Pedir Ahora</button>' +
         '</div>' +
         '</div>' +

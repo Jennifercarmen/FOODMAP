@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
   $('.logo').animate({
-    'left': '+=28%'
+    'left': '+=38%'
   }, 'slow');
   $('h4').animate({
     'font-size': 24,
@@ -8,5 +8,5 @@ jQuery(document).ready(function() {
   }, 1800);
   setTimeout(function() {
     window.location.href = 'views/main.html';
-  }, 3000);
+  }, 4000);
 });

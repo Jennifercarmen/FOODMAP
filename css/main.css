@@ -9,6 +9,9 @@ body {
 
 
 /* Helpers */
+.center{
+    margin: 0 auto;
+}
 .navbar-header{
     background-color: #5755b9;
 }
@@ -42,7 +45,6 @@ body {
 
 .imgmodal {
     width: 120px;
-    margin-left: 40px;
 }
 
 .box-images {
